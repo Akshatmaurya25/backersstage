@@ -16,10 +16,13 @@ import {
   Shield,
   Mail,
   ChevronRight,
+  Wine,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { MagneticButton } from "@/components/magnetic-button";
 import { InteractiveVenueMap } from "@/components/interactive-venue-map";
+import { AddToCalendar } from "@/components/add-to-calendar";
+import { EventReminder } from "@/components/event-reminder";
 
 export default function CannesEventPage() {
   // What to Expect section
@@ -27,7 +30,7 @@ export default function CannesEventPage() {
   const expectRef = useRef<HTMLDivElement>(null);
 
   // Auto-rotate tabs
-
+  const eventDate = new Date("2025-06-29T16:00:00");
   const expectTabs = [
     {
       title: "Builder Showcases",
@@ -122,7 +125,7 @@ export default function CannesEventPage() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
+              {/* <Button
                 asChild
                 size="lg"
                 className="bg-accent text-accent-foreground hover:bg-accent/90"
@@ -136,12 +139,69 @@ export default function CannesEventPage() {
                 <Link href="mailto:partner@backersstage.com">
                   Become a Sponsor
                 </Link>
-              </Button>
+              </Button> */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+                className="flex flex-col  gap-4 justify-center"
+              >
+                <div className="flex flex-col sm:flex-row gap-4 mb-6 sm:mb-0">
+                  <MagneticButton>
+                    <Button
+                      asChild
+                      size="lg"
+                      className="bg-accent text-accent-foreground hover:bg-accent/90 relative overflow-hidden group"
+                    >
+                      <Link href="#apply">
+                        <span className="relative z-10">Apply to Pitch</span>
+                        <span className="absolute inset-0 bg-white/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
+                      </Link>
+                    </Button>
+                  </MagneticButton>
+
+                  {/* New Event Reminder Button */}
+                  <EventReminder
+                    eventName="BackersStage: Founder-Powered Demo Day"
+                    eventDate={eventDate}
+                    eventLocation="Espace Croisette, Cannes, France"
+                    size="lg"
+                    variant="outline"
+                  />
+
+                  {/* Add to Calendar Button */}
+                  <AddToCalendar
+                    eventName="BackersStage: Founder-Powered Demo Day"
+                    eventDescription="A high-signal showcase for technical founders building foundational Web3 infrastructure."
+                    eventLocation="Espace Croisette, Cannes, France"
+                    startDate={eventDate}
+                    endDate={
+                      new Date(eventDate.getTime() + 3.5 * 60 * 60 * 1000)
+                    } // 3.5 hours later
+                    size="lg"
+                  />
+                </div>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  {/* Add Venue Map Button */}
+                  <Button asChild size="lg" variant="outline">
+                    <Link href="/events/cannes-2025/venue">
+                      <MapPin className="mr-2 h-4 w-4" />
+                      View Venue Map
+                    </Link>
+                  </Button>
+
+                  {/* Add Happy Hour Button */}
+                  <Button asChild size="lg" variant="secondary">
+                    <Link href="/events/cannes-2025/happy-hour">
+                      <Wine className="mr-2 h-4 w-4" />
+                      Happy Hour Event
+                    </Link>
+                  </Button>
+                </div>
+              </motion.div>
             </div>
 
-            <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
-              <ArrowRight className="h-10 w-10 text-accent rotate-90" />
-            </div>
+        
           </div>
         </div>
       </section>
@@ -910,8 +970,6 @@ export default function CannesEventPage() {
           </div>
 
           <div className="max-w-3xl mx-auto">
-          
-
             <div className="space-y-6">
               {[
                 "Curate high-context Demo Days and Pitch Rounds",
