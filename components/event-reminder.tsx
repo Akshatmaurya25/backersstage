@@ -105,7 +105,7 @@ export function EventReminder({
       <Button
         onClick={() => setOpen(true)}
         className={cn(
-          "flex items-center gap-2 transition-all duration-300",
+          "flex items-center gap-2 transition-all duration-300 bg-green-700/10",
           buttonVariants[variant],
           buttonSizes[size],
           className,

@@ -40,7 +40,6 @@ export default function HappyHourPage() {
         "Soft introductions & post-Demo Day follow-ups",
         "Private deal discussions and co-investment exploration",
         "Mentorship opportunities with strategic alignment",
-        "Premium Food, Drink, Relaxed, high-trust environment",
       ],
     },
     {
@@ -279,9 +278,9 @@ export default function HappyHourPage() {
 
                         <div className="mt-8 p-4 bg-neutral-900/70 backdrop-blur-md rounded-lg border border-neutral-800">
                           <p className="text-neutral-400 italic">
-                            {index === 0
-                              ? "Strictly curated for invited guests to enable high-quality, strategic networking."
-                              : "Limited spots available - approval required for ecosystem participants."}
+                            {
+                              "Limited spots available - approval required for ecosystem participants."
+                            }
                           </p>
                         </div>
                       </div>

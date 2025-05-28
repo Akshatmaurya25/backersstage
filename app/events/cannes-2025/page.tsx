@@ -17,6 +17,7 @@ import {
   Mail,
   ChevronRight,
   Wine,
+  CircuitBoard,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { MagneticButton } from "@/components/magnetic-button";
@@ -104,7 +105,8 @@ export default function CannesEventPage() {
             <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
               <div className="flex items-center space-x-2 px-3 py-1.5 rounded-full bg-neutral-800/50 backdrop-blur-sm">
                 <MapPin className="h-4 w-4 text-accent" />
-                <span className="text-sm">Cannes, France</span>
+                {/* <span className="text-sm">Cannes, France</span> */}
+                <span className="text-sm">TBA</span>
               </div>
               <div className="flex items-center space-x-2 px-3 py-1.5 rounded-full bg-neutral-800/50 backdrop-blur-sm">
                 <Users className="h-4 w-4 text-accent" />
@@ -183,12 +185,12 @@ export default function CannesEventPage() {
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4">
                   {/* Add Venue Map Button */}
-                  <Button asChild size="lg" variant="outline">
+                  {/* <Button asChild size="lg" variant="outline">
                     <Link href="/events/cannes-2025/venue">
                       <MapPin className="mr-2 h-4 w-4" />
                       View Venue Map
                     </Link>
-                  </Button>
+                  </Button> */}
 
                   {/* Add Happy Hour Button */}
                   <Button asChild size="lg" variant="secondary">
@@ -200,8 +202,6 @@ export default function CannesEventPage() {
                 </div>
               </motion.div>
             </div>
-
-        
           </div>
         </div>
       </section>
@@ -915,7 +915,8 @@ export default function CannesEventPage() {
             <div className="animate-on-scroll  translate-y-8 transition-all duration-1000 delay-300">
               <div className="custom-card p-8 relative overflow-hidden group hover:shadow-[0_0_25px_rgba(130,255,165,0.15)] transition-all duration-500 h-full">
                 <div className="mb-6 text-accent bg-accent/10 w-14 h-14 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-                  <Zap className="h-7 w-7" />
+                  {/* <Zap className="h-7 w-7" /> */}
+                  <CircuitBoard className="h-7 w-7" />
                 </div>
 
                 <h3 className="heading-sm mb-2 group-hover:text-accent transition-colors duration-300">
