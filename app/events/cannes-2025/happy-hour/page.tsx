@@ -160,7 +160,6 @@ export default function HappyHourPage() {
                 startDate={eventDate}
                 endDate={new Date(eventDate.getTime() + 1 * 60 * 60 * 1000)} // 1 hour later
                 size="lg"
-                variant="secondary"
               />
             </div>
 
@@ -364,7 +363,7 @@ export default function HappyHourPage() {
             <div className="custom-card p-8 relative overflow-hidden group hover:shadow-[0_0_25px_rgba(130,255,165,0.15)] transition-all duration-500 h-full">
               <div className="absolute top-0 right-0">
                 <div className="bg-blue-500 text-white px-4 py-1 font-medium text-sm">
-                  3 Spots Only
+                  1/3 Spots Only
                 </div>
               </div>
 
