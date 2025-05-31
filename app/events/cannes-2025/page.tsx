@@ -193,7 +193,7 @@ export default function CannesEventPage() {
                   </Button> */}
 
                   {/* Add Happy Hour Button */}
-                  <Button asChild size="lg" variant="secondary">
+                  <Button asChild size="lg" className="mx-auto " variant="secondary">
                     <Link href="/events/cannes-2025/happy-hour">
                       <Wine className="mr-2 h-4 w-4" />
                       Happy Hour Event

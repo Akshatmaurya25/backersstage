@@ -501,7 +501,7 @@ export default function HappyHourPage() {
                 Format
               </h3>
               <p className="text-neutral-400 group-hover:text-neutral-300 transition-colors duration-300">
-                Invite-Only Networking
+                Curated Only Networking
               </p>
             </div>
           </div>
