@@ -6,12 +6,12 @@ import { Button } from "@/components/ui/button";
 
 const mediaPartners = [
   {
-    image: "https://ik.imagekit.io/d2v6okduo/image.png?updatedAt=1748165097921",
+    image: "https://ik.imagekit.io/d2v6okduo/coin_gabbar.png",
     link: "https://x.com/coin_gabbar_",
     name: "CoinGabbar",
   },
   {
-    image: "https://ik.imagekit.io/d2v6okduo/image.png",
+    image: "https://ik.imagekit.io/d2v6okduo/her_dao.png",
     link: "https://x.com/_HerDAO",
     name: "Her DAO",
   },
@@ -31,7 +31,8 @@ const mediaPartners = [
     name: "Bhopal DAO",
   },
   {
-    image: "https://ik.imagekit.io/d2v6okduo/image.png?updatedAt=1748165041677",
+    image:
+      "https://ik.imagekit.io/d2v6okduo/image%2017@3x.png?updatedAt=1747507566763",
     link: "https://x.com/AarambhLabs",
     name: "Aarambh Labs",
   },
