@@ -155,7 +155,7 @@ export default function CannesEventPage() {
                       size="lg"
                       className="bg-accent text-accent-foreground hover:bg-accent/90 relative overflow-hidden group"
                     >
-                      <Link href="#apply">
+                      <Link target="_blank" href="https://lu.ma/1cpw5eaj">
                         <span className="relative z-10">Apply to Pitch</span>
                         <span className="absolute inset-0 bg-white/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
                       </Link>
@@ -193,7 +193,12 @@ export default function CannesEventPage() {
                   </Button> */}
 
                   {/* Add Happy Hour Button */}
-                  <Button asChild size="lg" className="mx-auto " variant="secondary">
+                  <Button
+                    asChild
+                    size="lg"
+                    className="mx-auto "
+                    variant="secondary"
+                  >
                     <Link href="/events/cannes-2025/happy-hour">
                       <Wine className="mr-2 h-4 w-4" />
                       Happy Hour Event
