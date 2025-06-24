@@ -825,7 +825,7 @@ export default function CannesEventPage() {
                   Title Sponsor
                 </h3>
                 <div className="text-3xl font-display font-bold text-accent mb-6">
-                  $16,000
+                  $9,000
                 </div>
 
                 <ul className="space-y-3 mb-8">
@@ -877,7 +877,7 @@ export default function CannesEventPage() {
                   Ecosystem Partner
                 </h3>
                 <div className="text-3xl font-display font-bold text-accent mb-6">
-                  $6,000
+                  $3,000
                 </div>
 
                 <ul className="space-y-3 mb-8">
@@ -928,7 +928,7 @@ export default function CannesEventPage() {
                   Custom
                 </h3>
                 <div className="text-3xl font-display font-bold text-accent mb-6">
-                  Starting $2,499
+                  Starting $999
                 </div>
 
                 <p className="text-neutral-400 mb-8 group-hover:text-neutral-300 transition-colors duration-300">
